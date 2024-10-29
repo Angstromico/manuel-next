@@ -1,7 +1,14 @@
 {
   "IndexPage": {
     "title": "Manuel's Portfolio",
-    "description": "Welcome to Manuel's Portfolio"
+    "description": "Welcome!",
+    "heroTitle": "A Full Stack Developer",
+    "providing": {
+      "title": "Providing",
+      "subtitle": "The Best",
+      "experience": "Experience",
+      "description": "A full stack developer with excellency possesses deep expertise in front-end and back-end technologies, creating seamless, high-performance applications. They demonstrate mastery in modern frameworks, efficient problem-solving, and delivering scalable, user-centered solutions."
+    }
   },
   "NotFoundPage": {
     "title": "Page Not Found",

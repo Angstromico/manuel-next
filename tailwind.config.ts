@@ -16,6 +16,7 @@ const config: Config = {
       },
       colors: {
         background: '#080808',
+        bWhite: '#f5f5f5',
       },
     },
   },

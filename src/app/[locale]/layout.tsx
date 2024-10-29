@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
+import Starfield from '@/components/Starfield'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ interface RootLayoutProps {
     locale: string
   }
 }
+
 export default async function RootLayout({
   children,
   params: { locale },
@@ -28,12 +30,23 @@ export default async function RootLayout({
   return (
     <html className='dark' lang={locale}>
       <body
-        className={`${inter.className} bg-white dark:bg-background text-black dark:text-white`}
+        className={`${inter.className} bg-bWhite dark:bg-background text-black dark:text-white relative`}
       >
-        <div className='flex flex-col min-h-screen max-w-4xl mx-auto'>
+        {/* Render Starfield only in dark mode */}
+        <div className='hidden dark:block absolute inset-0 z-0 pointer-events-none'>
+          <Starfield />
+        </div>
+        {/* Render CloudyBackground only is not dark mode */}
+        {/* <div className='dark:hidden absolute inset-0 z-0 pointer-events-none'>
+          <CloudyBackground />
+        </div> */}
+
+        <div className='relative flex flex-col min-h-screen max-w-4xl mx-auto z-10'>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Header />
-            <main className='flex-grow mt-20'>{children}</main>
+            <main className='w-full'>
+              <div className='flex flex-col gap-20 h-[850px]'>{children}</div>
+            </main>
           </NextIntlClientProvider>
           <Footer />
         </div>

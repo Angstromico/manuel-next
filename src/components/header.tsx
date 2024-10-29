@@ -20,9 +20,11 @@ export default function Header() {
   }
 
   return (
-    <header className='p-4'>
+    <header className='p-4 w-full'>
       <nav className='flex items-center justify-between'>
-        <Link href='/'>{t('home')}</Link>
+        <Link className='font-bold' href='/'>
+          {t('home')}
+        </Link>
         <div className='flex items-center gap-4'>
           {/* Dark Mode Toggle Button */}
           <button

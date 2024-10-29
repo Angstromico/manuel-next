@@ -1,7 +1,14 @@
 {
   "IndexPage": {
     "title": "Portafolio Manuel",
-    "description": "Bienvenido al Portafolio de Manuel"
+    "description": "¡Bienvenido!",
+    "heroTitle": "Desarrollador Web Full Stack",
+    "providing": {
+      "title": "Ofreciendo",
+      "subtitle": "Lo mejor",
+      "experience": "Experiencia",
+      "description": "Un desarrollador full stack de excelencia cuenta con amplia experiencia en tecnologías front-end y back-end, creando aplicaciones fluidas y de alto rendimiento. Domina frameworks modernos, resuelve problemas de manera eficiente y entrega soluciones escalables centradas en el usuario."
+    }
   },
   "NotFoundPage": {
     "title": "Page Not Found",
