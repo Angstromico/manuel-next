@@ -6,6 +6,7 @@ import './globals.css'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Starfield from '@/components/Starfield'
+import AnimateBg from '@/components/AnimateBg'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,9 +38,7 @@ export default async function RootLayout({
           <Starfield />
         </div>
         {/* Render CloudyBackground only is not dark mode */}
-        {/* <div className='dark:hidden absolute inset-0 z-0 pointer-events-none'>
-          <CloudyBackground />
-        </div> */}
+        <AnimateBg />
 
         <div className='relative flex flex-col min-h-screen max-w-4xl mx-auto z-10'>
           <NextIntlClientProvider locale={locale} messages={messages}>
