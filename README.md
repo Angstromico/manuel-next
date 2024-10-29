@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Manuel's Porfolio
+
+![image](https://raw.githubusercontent.com/Angstromico/manuel-next/refs/heads/main/src/app/opengraph-image.png)
+
 ## Getting Started
 
 First, run the development server:
