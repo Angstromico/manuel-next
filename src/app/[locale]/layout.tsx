@@ -13,12 +13,12 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: "Manuel's Portfolio",
   description: 'Page from the Web Developer Manuel Morales',
-  metadataBase: new URL('https://your-domain.com'), // Replace with your domain
+  metadataBase: new URL('https://manuel-portfolio-next.netlify.app/'), // Replace with your domain
   openGraph: {
     title: "Manuel's Portfolio",
     description:
       'Portfolio of Web Developer Manuel Morales, showcasing projects and skills.',
-    url: 'https://your-domain.com',
+    url: 'https://manuel-portfolio-next.netlify.app/',
     siteName: "Manuel's Portfolio",
     locale: 'en',
     type: 'website',
