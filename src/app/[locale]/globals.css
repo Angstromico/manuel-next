@@ -18,8 +18,8 @@
   isolation: isolate;
   overflow: hidden;
   align-items: center;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   border-radius: 32px;
   box-shadow: inset 0 -7px 11px #a48fff1f;
   display: flex;
@@ -39,19 +39,20 @@
   background: linear-gradient(
       180deg,
       rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.32) 100%
+      rgba(60, 8, 126, 0.5) 100% /* Increased opacity for a darker gradient */
     ),
-    rgba(113, 47, 255, 0.12);
-  box-shadow: inset 0 0 12px #bf97ff3d;
+    rgba(113, 47, 255, 0.25); /* Increased opacity */
+  box-shadow: inset 0 0 12px rgba(191, 151, 255, 0.5); /* Darker shadow */
 }
 
 .dark .button-primary {
   background: linear-gradient(
       180deg,
       rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.42) 100%
+      rgba(60, 8, 126, 0.55) 100% /* Increased opacity for a darker gradient */
     ),
-    rgba(255, 255, 255, 0.12); /* Inverted color for dark mode */
+    rgba(255, 255, 255, 0.2); /* Increased opacity for a more pronounced color */
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.25); /* Adjusted shadow for dark mode */
 }
 
 .button-primary:hover {

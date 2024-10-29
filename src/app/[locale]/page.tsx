@@ -8,6 +8,7 @@ export default function Home() {
     subtitle: t('providing.subtitle'),
     experience: t('providing.experience'),
     description: t('providing.description'),
+    more: t('providing.more'),
   }
 
   return (

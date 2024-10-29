@@ -1,13 +1,14 @@
 {
   "IndexPage": {
-    "title": "Portafolio Manuel",
+    "title": "Portafolio Manuel Morales",
     "description": "¡Bienvenido!",
     "heroTitle": "Desarrollador Web Full Stack",
     "providing": {
       "title": "Ofreciendo",
-      "subtitle": "Lo mejor",
+      "subtitle": "La mejor",
       "experience": "Experiencia",
-      "description": "Un desarrollador full stack de excelencia cuenta con amplia experiencia en tecnologías front-end y back-end, creando aplicaciones fluidas y de alto rendimiento. Domina frameworks modernos, resuelve problemas de manera eficiente y entrega soluciones escalables centradas en el usuario."
+      "description": "Un desarrollador full stack de excelencia cuenta con amplia experiencia en tecnologías front-end y back-end, creando aplicaciones fluidas y de alto rendimiento. Domina frameworks modernos, resuelve problemas de manera eficiente y entrega soluciones escalables centradas en el usuario.",
+      "more": "Más Información"
     }
   },
   "NotFoundPage": {
