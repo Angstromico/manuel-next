@@ -13,6 +13,30 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: "Manuel's Portfolio",
   description: 'Page from the Web Developer Manuel Morales',
+  openGraph: {
+    title: "Manuel's Portfolio",
+    description:
+      'Portfolio of Web Developer Manuel Morales, showcasing projects and skills.',
+    url: 'https://your-domain.com', // Replace with your domain
+    siteName: "Manuel's Portfolio",
+    locale: 'en',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@yourTwitterHandle', // Replace with your Twitter handle
+    title: "Manuel's Portfolio",
+    description:
+      'Portfolio of Web Developer Manuel Morales, showcasing projects and skills.',
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 interface RootLayoutProps {
