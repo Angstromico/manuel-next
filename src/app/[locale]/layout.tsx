@@ -13,11 +13,12 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: "Manuel's Portfolio",
   description: 'Page from the Web Developer Manuel Morales',
+  metadataBase: new URL('https://your-domain.com'), // Replace with your domain
   openGraph: {
     title: "Manuel's Portfolio",
     description:
       'Portfolio of Web Developer Manuel Morales, showcasing projects and skills.',
-    url: 'https://your-domain.com', // Replace with your domain
+    url: 'https://your-domain.com',
     siteName: "Manuel's Portfolio",
     locale: 'en',
     type: 'website',
@@ -28,10 +29,6 @@ export const metadata: Metadata = {
     title: "Manuel's Portfolio",
     description:
       'Portfolio of Web Developer Manuel Morales, showcasing projects and skills.',
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
   },
   robots: {
     index: true,
@@ -50,7 +47,7 @@ export default async function RootLayout({
   children,
   params: { locale },
 }: Readonly<RootLayoutProps>) {
-  const messages = await getMessages(locale)
+  const messages = await getMessages({ locale })
 
   return (
     <html className='dark' lang={locale}>
