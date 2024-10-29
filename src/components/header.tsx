@@ -10,13 +10,17 @@ export default function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false)
 
   useEffect(() => {
-    // Initialize dark mode state based on current class on html
-    setIsDarkMode(document.documentElement.classList.contains('dark'))
+    // Check localStorage for saved dark mode preference
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true'
+    setIsDarkMode(savedDarkMode)
+    document.documentElement.classList.toggle('dark', savedDarkMode)
   }, [])
 
   const toggleDarkMode = () => {
-    document.documentElement.classList.toggle('dark')
-    setIsDarkMode((prev) => !prev)
+    const newMode = !isDarkMode
+    document.documentElement.classList.toggle('dark', newMode)
+    setIsDarkMode(newMode)
+    localStorage.setItem('darkMode', JSON.stringify(newMode)) // Save new mode in localStorage
   }
 
   return (
