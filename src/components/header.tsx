@@ -49,7 +49,7 @@ export default function Header() {
         const { name, src, link, mail } = social
         const email = `mailto:${link}`
         return (
-          <Link key={i} href={mail ? email : link}>
+          <Link target='_blank' key={i} href={mail ? email : link}>
             <Image
               src={src}
               alt={name}
