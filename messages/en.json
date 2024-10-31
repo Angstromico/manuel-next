@@ -20,6 +20,11 @@
     "skills": "Skills",
     "projects": "Projects"
   },
+  "Skills": {
+    "title": "My Skills",
+    "subtitle": "Making apps with modern technologies",
+    "never": "Never miss a task, deadline or idea"
+  },
   "Footer": {
     "copyright": "All rights reserved."
   }

@@ -20,6 +20,11 @@
     "skills": "Habilidades",
     "projects": "Projectos"
   },
+  "Skills": {
+    "title": "Mis Habilidades",
+    "subtitle": "Creación de aplicaciones con tecnologías modernas",
+    "never": "Nunca te pierdas una tarea, una fecha límite o una idea."
+  },
   "Footer": {
     "copyright": "Todos los Derechos Reservados."
   }
