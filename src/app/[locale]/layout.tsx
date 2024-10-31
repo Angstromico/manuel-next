@@ -64,11 +64,11 @@ export default async function RootLayout({
         <div className='relative flex flex-col min-h-screen max-w-4xl mx-auto z-10'>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Header />
-            <main className='w-full'>
-              <div className='flex flex-col gap-20 h-[850px]'>{children}</div>
+            <main className='w-full flex-grow'>
+              <div className='flex flex-col gap-20'>{children}</div>
             </main>
+            <Footer />
           </NextIntlClientProvider>
-          <Footer />
         </div>
       </body>
     </html>
