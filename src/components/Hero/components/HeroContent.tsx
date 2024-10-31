@@ -25,7 +25,7 @@ const HeroContent = ({ title, providing }: PropsHero) => {
       animate='visible'
       className='flex flex-row items-center justify-center px-20 my-8 w-full z-20 text-bWhite'
     >
-      <div className='h-full w-full flex flex-col gap-5 m-auto justify-center text-start relative'>
+      <div className='h-full w-full flex flex-col gap-5 m-auto justify-center items-center md:items-start text-start relative'>
         <motion.div
           className='Welcome-box opacity-90 py-4 px-1 border border-[#8fbd078b] dark:border-[#7042f88b]'
           variants={slideInFromTop}
@@ -34,7 +34,7 @@ const HeroContent = ({ title, providing }: PropsHero) => {
           <h1 className='Welcome-text text-sm'>{title}</h1>
         </motion.div>
         <motion.div
-          className='flex flex-col gap-6 mt-6 text-6xl font-bold max-w-2xl w-auto h-auto'
+          className='flex flex-col gap-6 mt-6 text-4xl md:text-6xl font-bold max-w-2xl w-auto h-auto'
           variants={slideInFromLeft(0.5)}
         >
           {providing.title}
@@ -51,7 +51,7 @@ const HeroContent = ({ title, providing }: PropsHero) => {
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
-          className='py-2 button-primary text-center cursor-pointer rounded-lg max-w-52 font-bold'
+          className='py-2 px-1 button-primary text-center cursor-pointer rounded-lg max-w-52 font-bold'
         >
           {providing.more}
         </motion.a>
