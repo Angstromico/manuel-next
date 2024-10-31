@@ -18,6 +18,10 @@ const config: Config = {
         background: '#080808',
         bWhite: '#f5f5f5',
       },
+      animation: {
+        'spin-slow': 'spin 2s linear infinite', // Adjust speed (e.g., 3s for slower spin)
+        'spin-fast': 'spin 0.5s linear infinite', // Adjust speed (e.g., 0.5s for faster spin)
+      },
     },
   },
   plugins: [],

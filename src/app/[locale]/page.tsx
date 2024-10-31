@@ -13,7 +13,9 @@ export default function Home() {
 
   return (
     <div className='w-full mt-5 flex flex-col justify-center items-center'>
-      <h1 className='text-4xl font-semibold'>{t('title')}</h1>
+      <h1 className='text-center md:text-left text-4xl font-semibold'>
+        {t('title')}
+      </h1>
       <p>{t('description')}</p>
       <Hero title={t('heroTitle')} providing={providing} />
     </div>
