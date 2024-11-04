@@ -2,7 +2,7 @@ import HeroContent from './components/HeroContent'
 import type { PropsHero } from './components/HeroContent'
 const Hero = ({ title, providing }: PropsHero) => {
   return (
-    <section className='w-screen py-12 md:py-16 flex flex-col relative top-5'>
+    <section className='w-full sm:w-screen py-12 md:py-16 flex flex-col relative top-5'>
       <HeroContent title={title} providing={providing} />
       <video
         autoPlay

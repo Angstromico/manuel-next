@@ -25,6 +25,12 @@
     "subtitle": "Making apps with modern technologies",
     "never": "Never miss a task, deadline or idea"
   },
+  "Encryption": {
+    "performance": "Performance",
+    "security": "Security",
+    "quality": "Hight Quality",
+    "secure": "Scalable, Secure, Reliable."
+  },
   "Footer": {
     "copyright": "All rights reserved."
   }

@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl'
-import { Hero, Skills } from '@/components'
+import { Hero, Skills, Encryption } from '@/components'
 
 export default function Home() {
   const t = useTranslations('IndexPage')
@@ -19,6 +19,7 @@ export default function Home() {
       <p>{t('description')}</p>
       <Hero title={t('heroTitle')} providing={providing} />
       <Skills />
+      <Encryption />
     </div>
   )
 }
