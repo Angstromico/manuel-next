@@ -23,7 +23,10 @@ const SkillText = ({
   })
 
   return (
-    <div ref={ref} className='w-full h-auto centeredFlex flex-col'>
+    <div
+      ref={ref}
+      className='w-full h-auto centeredFlex flex-col text-white dark:text-white'
+    >
       {/* Animation starts when this section is in view */}
       <motion.div
         className='Welcome-box opacity-90 py-4 px-1 border border-[#8fbd078b] dark:border-[#7042f88b]'

@@ -14,7 +14,7 @@ const Skills = () => {
   return (
     <section
       id='skills'
-      className='centeredFlex gap-3 h-full relative overflow-hidden py-20'
+      className='centeredFlex gap-3 h-full relative overflow-hidden py-20 mb-80 px-2'
       style={{ transform: 'scale(0.9)' }}
     >
       <SkillText
@@ -26,18 +26,18 @@ const Skills = () => {
       <SkillCategory skills={Backend_skill} />
       <SkillCategory skills={Skill_data} />
       <SkillCategory skills={Full_stack} />
-      <div className='full absolute'>
-        <div className='full -z-10 opacity-30 absolute centeredFlex bg-cover'>
-          <video
-            className='w-full'
-            preload='false'
-            playsInline
-            loop
-            muted
-            autoPlay
-            src='/blackholee.webm'
-          />
-        </div>
+      {/* Video Background */}
+      <div className='absolute full inset-0 -z-10 opacity-70 dark:opacity-30'>
+        <video
+          className='w-full h-full object-cover'
+          style={{ position: 'absolute', top: 0, left: 0 }}
+          preload='false'
+          playsInline
+          loop
+          muted
+          autoPlay
+          src='/blackholee.webm'
+        />
       </div>
     </section>
   )
