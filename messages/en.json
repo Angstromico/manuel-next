@@ -31,6 +31,12 @@
     "quality": "Hight Quality",
     "secure": "Scalable, Secure, Reliable."
   },
+  "Projects": {
+    "title": "My Projects",
+    "firstPage": "MIa Femtech is a dynamic, user-centered platform designed with a focus on seamless UI/UX and enhanced functionality. Built primarily with Nuxt for its frontend framework, Express.js for backend logic, and Tailwind CSS for responsive design, MIa Femtech offers a polished and intuitive interface.\n\nThe project involved translating intricate Figma designs into a live, responsive UI, creating a visually appealing and accessible experience for users. Key tasks included implementing multilingual support, backend logic for efficient data handling, and rigorous attention to design detail. The result is a platform that blends sophisticated tech with user-friendly navigation and design, tailored to MIa Femtech’s specific goals.",
+    "secondPage": "GamifyMex is an engaging gambling platform built with Astro and React for the frontend, Tailwind CSS and Sass for styling, and Django on the backend. It features a dashboard where users can register and participate in various games.\n\nGamifyMex offers pages dedicated to bingo and quiz games, providing a captivating user experience with top-notch UI/UX. The design incorporates Three.js to enhance visual appeal, making GamifyMex a standout in interactive and immersive gameplay.",
+    "thirdPage": "S3 is a bilingual website developed for a Costa Rican company specializing in construction and building repairs. Built using React with TypeScript on the frontend, styled with SASS and Tailwind, and powered by a Node.js, Express, and Strapi backend.\n\nThe site provides an intuitive and accessible interface in both Spanish and English, tailored to showcase the company’s services, expertise, and projects to a diverse audience."
+  },
   "Footer": {
     "copyright": "All rights reserved."
   }

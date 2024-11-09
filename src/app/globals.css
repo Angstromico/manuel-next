@@ -1,3 +1,33 @@
+:root {
+  /* Dark Gradient Colors */
+  --color-dark-start: #1a1a1a;
+  --color-dark-mid: #333333;
+  --color-dark-end: #4d4d4d;
+
+  /* Light Gradient Colors */
+  --color-light-start: #e6e6e6;
+  --color-light-mid: #cccccc;
+  --color-light-end: #b3b3b3;
+
+  /* Additional Colors */
+  --color-purple: #7d3cff;
+  --color-cyan: #00d4ff;
+}
+
+/* Dark mode alternative */
+.dark {
+  --color-dark-start: #7d3cff;
+  --color-dark-mid: #4d4d4d;
+  --color-dark-end: #00d4ff;
+}
+
+/* Dark mode colors */
+.dark {
+  --color-dark-start: #e6e6e6;
+  --color-dark-mid: #cccccc;
+  --color-dark-end: #b3b3b3;
+}
+
 .link-nav {
   @apply font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-700;
 }
