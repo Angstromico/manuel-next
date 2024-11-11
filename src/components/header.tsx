@@ -6,6 +6,7 @@ import LocalSwitcher from './local-switcher'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { Socials } from '@/constants'
+import Stars from './Start'
 
 export default function Header() {
   const t = useTranslations('Navigation')
@@ -67,9 +68,9 @@ export default function Header() {
   )
 
   return (
-    <header className='p-4 md:p-6 lg:p-8 w-full flex flex-col md:flex-row items-center justify-between gap-4'>
+    <header className='p-4 md:p-6 lg:p-8 w-full flex items-center justify-between gap-4'>
       {/* Logo and Navigation Links */}
-      <nav className='flex items-center justify-center md:justify-start gap-4 md:gap-6'>
+      <nav className='flex items-center gap-4'>
         <Link className='font-bold' href='/'>
           <Image
             className='hover:animate-spin-slow'
@@ -94,14 +95,8 @@ export default function Header() {
       </button>
 
       {/* Social Icons, Dark Mode Toggle, and Locale Switcher */}
-      <div
-        className={`flex gap-2 md:gap-4 ${
-          isMenuOpen ? 'flex-col items-center mt-4' : 'hidden md:flex'
-        }`}
-      >
-        <nav className='flex gap-2'>
-          <SocialLinks />
-        </nav>
+      <div className='hidden md:flex gap-2'>
+        <SocialLinks />
         <button
           onClick={toggleDarkMode}
           className='p-2 border rounded'
@@ -114,10 +109,39 @@ export default function Header() {
         <LocalSwitcher />
       </div>
 
-      {/* Mobile Navigation Links */}
+      {/* Mobile Sidebar Menu */}
       {isMenuOpen && (
-        <div className='flex flex-col items-center gap-2 md:hidden mt-4'>
-          <NavigationLinks />
+        <div
+          className='fixed inset-0 bg-black z-40 flex justify-end md:hidden'
+          onClick={toggleMenu} // Close the menu when clicking outside
+        >
+          <div
+            className='h-full w-full max-w-[600px] p-6 flex flex-col items-start gap-4 transition-transform transform translate-x-0 overflow-hidden'
+            onClick={(e) => e.stopPropagation()} // Prevent close on inner click
+          >
+            <Stars />
+            <button
+              className='self-end text-xl mb-6 text-white'
+              onClick={toggleMenu}
+              aria-label='Close menu'
+            >
+              ✕
+            </button>
+            <NavigationLinks />
+            <div className='mt-6 flex gap-4'>
+              <SocialLinks />
+              <button
+                onClick={toggleDarkMode}
+                className='p-2 border rounded'
+                aria-label={
+                  isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'
+                }
+              >
+                {isDarkMode ? '🌞' : '🌙'}
+              </button>
+              <LocalSwitcher />
+            </div>
+          </div>
         </div>
       )}
     </header>
