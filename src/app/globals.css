@@ -39,3 +39,25 @@
 .full {
   @apply w-full h-full;
 }
+
+.social-icon {
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: #7c3aed; /* Violet color for light mode */
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #a855f7; /* Slightly brighter violet on hover */
+  transform: scale(1.2);
+}
+
+.dark .social-icon {
+  color: #00ffea; /* Brighter neon cyan for dark mode */
+  text-shadow: 0 0 8px #00ffea, 0 0 16px #00ffea, 0 0 24px #00ffea; /* Neon glow effect */
+}
+
+.dark .social-icon:hover {
+  color: #00ff99; /* Even more vibrant neon on hover */
+  transform: scale(1.2);
+  text-shadow: 0 0 12px #00ff99, 0 0 24px #00ff99, 0 0 36px #00ff99; /* More intense glow on hover */
+}
