@@ -6,15 +6,12 @@ interface Props {
   title: string
   description: string
   href: string
+  to: string
 }
 
-const ProjectCard = ({ src, title, description, href }: Props) => {
+const ProjectCard = ({ src, title, description, href, to }: Props) => {
   return (
-    <Link
-      href={href}
-      target='_blank'
-      className='relative overflow-hidden border border-gray-800 dark:border-[#2A0E61] rounded-lg shadow-lg'
-    >
+    <div className='relative overflow-hidden border border-gray-800 dark:border-[#2A0E61] rounded-lg shadow-lg'>
       <Image
         src={src}
         alt={title}
@@ -26,7 +23,16 @@ const ProjectCard = ({ src, title, description, href }: Props) => {
       <p className='mx-2 mt-2 dark:text-gray-300 text-gray-800'>
         {description}
       </p>
-    </Link>
+      <div className='my-5 flex w-full justify-center items-center'>
+        <Link
+          className='font-bold p-2 rounded-lg dark:bg-violet-800 dark:hover:bg-violet-950 bg-violet-700 hover:bg-violet-800 transition-colors text-white'
+          href={href}
+          target='_blank'
+        >
+          {to}
+        </Link>
+      </div>
+    </div>
   )
 }
 export default ProjectCard

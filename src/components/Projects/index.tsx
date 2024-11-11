@@ -19,18 +19,21 @@ const Projects = () => {
               title='MIA Femtech'
               description={t('firstPage')}
               href='https://miafemtech.com/'
+              to={t('to')}
             />
             <ProjectCard
               src='/gami.png'
               title='GamifyMex'
               description={t('secondPage')}
               href='https://gamify-mexico.netlify.app/'
+              to={t('to')}
             />
             <ProjectCard
               src='/s3.png'
               title='S3 Costa Rica'
               description={t('thirdPage')}
               href='https://s3angstromico.netlify.app/'
+              to={t('to')}
             />
           </div>
         </div>
