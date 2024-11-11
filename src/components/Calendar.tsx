@@ -56,7 +56,7 @@ const Calendar = () => {
   const monthsList = locale === 'en' ? months.en : months.es
 
   return (
-    <section className='full centeredFlex my-12'>
+    <section id='calendar' className='full centeredFlex my-12'>
       <GitHubCalendar
         username='Angstromico'
         labels={{

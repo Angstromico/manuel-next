@@ -40,6 +40,9 @@ export default function Header() {
       <Link className='link-nav' href='#projects'>
         {t('projects')}
       </Link>
+      <Link className='link-nav' href='#calendar'>
+        {t('calendar')}
+      </Link>
     </>
   )
 

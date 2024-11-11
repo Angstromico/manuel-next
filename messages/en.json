@@ -18,7 +18,8 @@
   "Navigation": {
     "aboutMe": "About me",
     "skills": "Skills",
-    "projects": "Projects"
+    "projects": "Projects",
+    "calendar": "Calendar"
   },
   "Skills": {
     "title": "My Skills",
