@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl'
-import { Hero, Skills, Encryption, Projects } from '@/components'
+import { Hero, Skills, Encryption, Projects, Calendar } from '@/components'
 
 export default function Home() {
   const t = useTranslations('IndexPage')
@@ -21,6 +21,7 @@ export default function Home() {
       <Skills />
       <Encryption />
       <Projects />
+      <Calendar />
     </div>
   )
 }

@@ -38,6 +38,11 @@
     "thirdPage": "S3 es un sitio web bilingüe desarrollado para una empresa costarricense especializada en construcción y reparación de edificios. Desarrollado con React y TypeScript en el frontend, con estilos en SASS y Tailwind, y un backend en Node.js, Express y Strapi.\n\nEl sitio ofrece una interfaz intuitiva y accesible en español e inglés, diseñada para mostrar los servicios, experiencia y proyectos de la empresa a una audiencia diversa.",
     "to": "Ver la Pagina"
   },
+  "Calendar": {
+    "contribution": "contribuciones en el último año",
+    "less": "Menos",
+    "more": "Más"
+  },
   "Footer": {
     "copyright": "Todos los Derechos Reservados."
   }
