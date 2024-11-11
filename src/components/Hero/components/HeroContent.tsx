@@ -52,6 +52,9 @@ const HeroContent = ({ title, providing }: PropsHero) => {
         <motion.a
           variants={slideInFromLeft(1)}
           className='py-2 px-1 button-primary text-center cursor-pointer rounded-lg max-w-52 font-bold'
+          href='https://angstromico-cv-manuel-morales.netlify.app/'
+          target='_blank'
+          rel='noopener noreferrer'
         >
           {providing.more}
         </motion.a>
