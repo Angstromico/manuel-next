@@ -59,7 +59,7 @@ export default async function RootLayout({
           <Starfield />
         </div>
         {/* Render CloudyBackground only is not dark mode */}
-        <AnimateBg />
+        {/* <AnimateBg /> */}
 
         <div className='relative flex flex-col min-h-screen max-w-4xl mx-auto z-10'>
           <NextIntlClientProvider locale={locale} messages={messages}>
