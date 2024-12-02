@@ -6,7 +6,7 @@ const Projects = () => {
   const t = useTranslations('Projects')
 
   return (
-    <section className='flex-col centeredFlex py-20'>
+    <section id='projects' className='flex-col centeredFlex py-20'>
       <div className='full flex flex-col md:flex-row justify-center flex-wrap gap-6 md:gap-10 px-3 md:px-10'>
         <h2 className='text-center xl:text-left text-3xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-dark dark:bg-gradient-light py-20'>
           {t('title')}
