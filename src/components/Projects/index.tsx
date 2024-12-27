@@ -29,10 +29,10 @@ const Projects = () => {
               to={t('to')}
             />
             <ProjectCard
-              src='/s3.png'
-              title='S3 Costa Rica'
+              src='/velzia.png'
+              title='Velzia Sig App'
               description={t('thirdPage')}
-              href='https://s3angstromico.netlify.app/'
+              href='https://sig.chapnikandgiesen.com/'
               to={t('to')}
             />
           </div>
