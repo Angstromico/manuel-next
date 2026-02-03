@@ -14,8 +14,7 @@ const Skills = () => {
   return (
     <section
       id='skills'
-      className='centeredFlex gap-3 h-full relative overflow-hidden pb-20 mb-20 md:mb-40 px-2'
-      style={{ transform: 'scale(0.9)' }}
+      className='flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20'
     >
       <SkillText
         title={t('title')}
@@ -27,10 +26,9 @@ const Skills = () => {
       <SkillCategory skills={Skill_data} />
       <SkillCategory skills={Full_stack} />
       {/* Video Background */}
-      <div className='absolute full inset-0 -z-10 opacity-70 dark:opacity-30'>
+      <div className='absolute inset-0 -z-10 w-full h-full'>
         <video
-          className='w-full h-full object-cover'
-          style={{ position: 'absolute', top: 0, left: 0 }}
+          className='w-full h-full object-cover opacity-50 dark:opacity-30'
           preload='false'
           playsInline
           loop
