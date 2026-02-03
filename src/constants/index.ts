@@ -58,7 +58,7 @@ export const Socials = [
   {
     link: 'https://www.linkedin.com/in/manuel-esteban-morales-zuarez-68573b189/',
     name: 'LinkedIn',
-    src: '/LinkedIn.svg',
+    src: '/linkedin.svg',
   },
   {
     link: 'manuesteban1990@gmail.com',
